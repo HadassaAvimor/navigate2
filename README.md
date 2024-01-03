@@ -1,5 +1,5 @@
   <header>
-    <h1>פרויקט משותף - תרגול Git ✌️✌️✌️</h1>
+    <h1>פרויקט משותף - תרגול Git ✌✌️✌️✌️</h1>
   </header>
   <main>
     <div class="instructions">

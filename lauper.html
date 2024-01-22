@@ -1,0 +1,288 @@
+<p><span class="fast-flicker"></span><span class="flicker">Avigail</span></p>
+<style>
+    @font-face {
+    font-family: Clip;
+    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+  }
+  p{
+    font-size: 600px}
+  
+  body {
+    background-color: rgb(17, 19, 20);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px; 
+  }
+  
+  .sign {
+    position: absolute;
+    width: 1000%;
+    height:1000%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 30%;
+    top: 90%;
+    font-family: Copperplate, Papyrus, fantasy;
+    text-transform: uppercase;
+    font-size: 15em;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+  }
+  
+  @keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+    28%,
+    33% {
+      color: #ff65bd;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #ff2483;
+      text-shadow: none;
+    }
+  }
+  
+  .flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+ 
+  .fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      color: #6b1839;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+  }
+  
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: 0.9;
+    }
+  
+    6% {
+      opacity: 0.85;
+    }
+  
+    8% {
+      opacity: 0.95;
+    }
+  
+    10% {
+      opacity: 0.9;
+    }
+  
+    11% {
+      opacity: 0.922;
+    }
+  
+    12% {
+      opacity: 0.9;
+    }
+  
+    14% {
+      opacity: 0.95;
+    }
+  
+    16% {
+      opacity: 0.98;
+    }
+  
+    17% {
+      opacity: 0.9;
+    }
+  
+    19% {
+      opacity: 0.93;
+    }
+  
+    20% {
+      opacity: 0.99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: 0.94;
+    }
+  
+    28% {
+      opacity: 0.98;
+    }
+  
+    37% {
+      opacity: 0.93;
+    }
+  
+    38% {
+      opacity: 0.5;
+    }
+  
+    39% {
+      opacity: 0.96;
+    }
+  
+    42% {
+      opacity: 1;
+    }
+  
+    44% {
+      opacity: 0.97;
+    }
+  
+    46% {
+      opacity: 0.94;
+    }
+  
+    56% {
+      opacity: 0.9;
+    }
+  
+    58% {
+      opacity: 0.9;
+    }
+  
+    60% {
+      opacity: 0.99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.9;
+    }
+  
+    72% {
+      opacity: 0.95;
+    }
+  
+    93% {
+      opacity: 0.93;
+    }
+  
+    95% {
+      opacity: 0.95;
+    }
+  
+    97% {
+      opacity: 0.93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  .button {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-shadow: -2px 2px 0 rgba(black, 0.2);
+    font-weight: bold;
+    padding-right: 50px;
+    margin: 10px;
+    
+    &.blue {
+        background: linear-gradient(
+           to bottom, #a2d3e9, #7abedf
+        );
+        box-shadow:
+          -1px 0px 1px #6fadcb, 0px 1px 1px #54809d,
+          -2px 1px 1px #6fadcb, -1px 2px 1px #54809d,
+          -3px 2px 1px #6fadcb, -2px 3px 1px #54809d,
+          -4px 3px 1px #6fadcb, -3px 4px 1px #54809d,
+          -5px 4px 1px #6fadcb, -4px 5px 1px #54809d,
+          -6px 5px 1px #6fadcb,
+          
+          -6px 7px  0 rgba(black, 0.05),
+          -5px 8px  0 rgba(black, 0.05),
+          -3px 9px  0 rgba(black, 0.04),
+          -2px 10px 0 rgba(black, 0.04),
+          -1px 11px 0 rgba(black, 0.03),
+           0px 12px 0 rgba(black, 0.03),
+           1px 13px 0 rgba(black, 0.02),
+           2px 14px 0 rgba(black, 0.02),
+           3px 15px 0 rgba(black, 0.01),
+           4px 90px 0 rgba(black, 0.01),
+           5px 17px 0 rgba(black, 0.01),
+           6px 18px 0 rgba(black, 0.01),
+        
+           inset 0 4px 5px -2px rgba(white, 0.5),
+           inset 0 1px 0 0 rgba(black, 0.3);
+    
+      }
+ 
+    
+    transition: all 0.1s linear;
+    transform: translateZ(0);
+    
+    &:active {
+      box-shadow: none;
+      transform: translate3d(
+         -6px, 6px, 0
+      );
+    }
+    
+    .arrow {
+      filter: drop-shadow(-2px 0 0 rgba(black, 0.2)); 
+    }
+    
+    &::after {
+      filter: drop-shadow(-2px 0 0 rgba(black, 0.2)); 
+    }
+    
+    &::after, &::before {
+      position: absolute;
+      content: " ";
+      right: 15px;
+      top: 140px;
+      width: 20px;
+      height: 180px;
+      background: rgb(182, 19, 106);
+      transform: rotate(-45deg);
+      display: block;
+      z-index:2;
+    }
+    
+    &::before {
+      height: 14px;
+      top: 26px;
+      right: 16px;
+      z-index:3;
+      transform: rotate(-137deg);
+      filter: drop-shadow(0 -2px 0 rgba(black, 0.15)); 
+    }
+    
+  }
+  
+
+
+</style>

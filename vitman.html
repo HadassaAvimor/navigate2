@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<h3><span>Yeh</span><span>ud</span><span>it</span><span>💔💕</span></h3>
+<style>
+a
+{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+   
+    color: rgb(31, 143, 254);
+
+}
+button{
+    height: 60px;
+    text-shadow: 
+        0 0 .05em var(--c1), 
+        0 0 .1em var(--c2), 
+
+}
+header
+{
+  
+height:150px;
+width: 100%;
+display: flex;
+background: url(./img.jpg)
+}
+nav
+{
+float: right;
+width: 10%;
+height:715px ;
+background: url(./img.jpg)
+
+}
+
+footer
+{
+width:100;
+height: 50px;
+background-color :rgb(0, 88, 139);
+text-align:center}
+
+
+article
+{
+width: 60%;
+height:695px;
+
+
+    
+}
+
+
+:root{
+    --spread: .5em;
+    --shift: .01em;
+    --base: #c74db7;
+    --c1: #21c2f5; 
+  }
+  @keyframes flicker1 {
+    95% {
+      text-shadow: 
+        0 0 .05em var(--c1), 
+        0 0 .1em var(--base), 
+  
+        calc(var(--shift) * 1) calc(var(--shift) * 1) calc(var(--spread) / 50) var(--c1), 
+        calc(var(--shift) * -1) calc(var(--shift) * -1) calc(var(--spread) / 50) var(--c1), 
+        calc(var(--shift) * 1) calc(var(--shift) * -1) calc(var(--spread) / 50) var(--c1), 
+        calc(var(--shift) * -1) calc(var(--shift) * 1) calc(var(--spread) / 50) var(--c1),
+  
+        0 0 var(--spread) var(--base),
+        0 0 calc(var(--spread) / 1.5) var(--base);
+    }
+    98% {
+      text-shadow: 
+        0 0 .05em var(--c1), 
+        0 0 .1em var(--c2), 
+  
+        calc(var(--shift) * 1) calc(var(--shift) * 1) calc(var(--spread) / 50) var(--c1), 
+        calc(var(--shift) * -1) calc(var(--shift) * -1) calc(var(--spread) / 50) var(--c1), 
+        calc(var(--shift) * 1) calc(var(--shift) * -1) calc(var(--spread) / 50) var(--c1), 
+        calc(var(--shift) * -1) calc(var(--shift) * 1) calc(var(--spread) / 50) var(--c1),
+  
+        0 0 0 var(--base),
+        0 0 0 var(--base);
+    }
+  }
+      
+  @keyframes flicker2 {
+    90% {
+      opacity: .1;
+      text-shadow: 
+        0 0 .05em var(--c1), 
+        0 0 .1em var(--c2), 
+  
+        calc(var(--shift) * 1) calc(var(--shift) * 1) calc(var(--spread) / 50) var(--c1), 
+        calc(var(--shift) * -1) calc(var(--shift) * -1) calc(var(--spread) / 50) var(--c1), 
+        calc(var(--shift) * 1) calc(var(--shift) * -1) calc(var(--spread) / 50) var(--c1), 
+        calc(var(--shift) * -1) calc(var(--shift) * 1) calc(var(--spread) / 50) var(--c1),
+  
+        0 0 0 var(--base),
+        0 0 0 var(--base);
+    }
+  }
+  
+
+
+  h3 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+    margin: 0 0 .2em 0;
+    font-size: 15em;
+    letter-spacing: -.01em;
+    transform: rotate(-12deg);
+    color: transparent;
+    text-shadow: 
+      0 0 .05em var(--c1), 
+      0 0 .1em var(--base), 
+  
+      calc(var(--shift) * 1) calc(var(--shift) * 1) calc(var(--spread) / 50) var(--c1), 
+      calc(var(--shift) * -1) calc(var(--shift) * -1) calc(var(--spread) / 50) var(--c1), 
+      calc(var(--shift) * 1) calc(var(--shift) * -1) calc(var(--spread) / 50) var(--c1), 
+      calc(var(--shift) * -1) calc(var(--shift) * 1) calc(var(--spread) / 50) var(--c1),
+      
+      0 0 var(--spread) var(--base),
+      0 0 calc(var(--spread) / 1.5) var(--base);
+    span {
+      &:nth-child(1) {
+        animation: flicker1 1s infinite alternate ease-in-out;
+      }
+      &:nth-child(2) {
+        animation: flicker1 1.5s infinite alternate ease-in-out;
+      }
+      &:nth-child(3) {
+        animation: flicker1 .47s infinite alternate ease-in-out;
+      }
+      &:nth-child(4) {
+        animation: flicker2 .1s infinite alternate ease-in-out;
+      }
+    }
+  }
+  p {
+    font-family: 'Pacifico', cursive;
+    font-weight: 50;
+    margin: 00 0 .1em 20;
+    font-size: 20px;
+    margin-right: 10%;
+   margin-left: 10%;
+   
+    color: transparent;
+    text-shadow: 
+      0 0 .1em var(--base), 
+  
+      calc(var(--shift) * 1) calc(var(--shift) * 1) calc(var(--spread) / 50) var(--c1), 
+      calc(var(--shift) * -1) calc(var(--shift) * -1) calc(var(--spread) / 50) var(--c1), 
+    
+      
+      0 0 var(--spread) var(--base),
+      0 0 calc(var(--spread) / 1.5) var(--base);
+  }
+ h1{
+    font-family: 'Pacifico', cursive;
+    font-weight: 150;
+    margin: 10 0 .1em 10;
+    font-size: 2em;
+   
+    color: transparent;
+    text-shadow: 
+      0 0 .05em var(--c1), 
+      0 0 .1em var(--base), 
+  
+      calc(var(--shift) * 1) calc(var(--shift) * 1) calc(var(--spread) / 50) var(--c1), 
+      calc(var(--shift) * -1) calc(var(--shift) * -1) calc(var(--spread) / 50) var(--c1), 
+    
+      
+      0 0 var(--spread) var(--base),
+      0 0 calc(var(--spread) / 1.5) var(--base);
+ }
+
+</style>
